@@ -10,7 +10,7 @@ const Blog = ({blogger, handelBookMark}) => {
     }
     return (
         <div className='m-8'>
-            <div className="card bg-base-100 w-96 shadow-sm">
+            <div className="card bg-base-100 w-[500px] h-[600px] shadow-sm">
         <figure>
           <img src={cover} alt="" />
         </figure>
@@ -24,7 +24,7 @@ const Blog = ({blogger, handelBookMark}) => {
 
 
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
+          <h2 className="card-title text-center">{title}</h2>
           <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
           
           {/* hashtag section show */}
