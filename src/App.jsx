@@ -9,12 +9,25 @@ function App() {
   .then(res=>res.json())
   return (
     <>
-      <h1 className='font-bold text-2xl'>knowledge-cafe</h1>
-      <Navbar></Navbar>
+    {/* 1st */}
+    <Navbar></Navbar>
+    
       
+      {/* 2nd */}
       <Suspense fallback={<h1>loading...</h1>}>
-      <Blogs blog={blog}></Blogs>
+      
+      <div className="flex text-center">
+        <div className="left w-[70%]">
+        <Blogs blog={blog}></Blogs>
+        </div>
+        <div className="right w-[30%]">
+        <h1>Hi</h1>
+        </div>
+
+      </div>
       </Suspense>
+
+      
       
     </>
   )
