@@ -11,10 +11,10 @@ function App() {
     <>
     {/* 1st */}
     <Navbar></Navbar>
-    
+
       
       {/* 2nd */}
-      <Suspense fallback={<h1>loading...</h1>}>
+      <Suspense fallback={<h1 className='text-center'>loading...</h1>}>
       
       <div className="flex text-center">
         <div className="left w-[70%]">
