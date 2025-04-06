@@ -13,9 +13,12 @@ const Blogs = ({blog}) => {
 
     // for reading time
     const [reading, setReading] =useState(0);
-    const handelReading=(time)=>{
+    const handelReading=(time, id)=>{
         const newReading =(reading + time);
         setReading(newReading);
+
+        const updatedBookmarks = bookMark.filter(book => book.id !== id);
+        setBookMark(updatedBookmarks);    
     }
 
     return (
@@ -40,7 +43,7 @@ const Blogs = ({blog}) => {
             <h1>Reading Time :{reading}</h1>
         <h1>Bookmarked Count : {bookMark.length}</h1>
         {
-            bookMark.map(marked=><p className='bg-gray-500 p-2 text-white mb-3 mt-3 rounded-xl'>{marked.title}</p>)
+            bookMark.map(marked=><p className='bg-red-500 p-2 text-white mb-3 mt-3 rounded-xl'>{marked.title}</p>)
         }
         </div>
 
