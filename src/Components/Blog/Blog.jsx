@@ -11,13 +11,13 @@ const Blog = ({blogger, handelBookMark, handelReading}) => {
     }
     return (
         <div className='m-8'>
-            <div className="card bg-base-100 w-[500px] h-[600px] shadow-sm">
+            <div className="card bg-base-100 w-96 shadow-sm">
         <figure>
           <img src={cover} alt="" />
         </figure>
 
         {/* author section */}
-        <div className='flex justify-around items-center p-3'>
+        <div className='flex justify-around items-center mt-2'>
             <h1>{author}</h1>
             <img className='w-16' src={author_img} alt="" />
             <button onClick={handel}><FaBookmark  size={25}/></button>

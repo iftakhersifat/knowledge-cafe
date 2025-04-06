@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Blogs from './Components/Blogs/Blogs'
 
 function App() {
+  
 
   const blog=fetch("blogs.json")
   .then(res=>res.json())
